@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    perspective: 1000px; /* Adding perspective for 3D effect */
+}
+
+.content {
+    transform-style: preserve-3d; /* Enable 3D space */
+    transition: transform 0.5s; /* Smooth transition */
+}
+
+.coming-soon {
+    background: linear-gradient(135deg, #ff6347, #ffbb33);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transform: rotateY(0deg); /* Initial rotation */
+}
+
+.coming-soon h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.coming-soon p {
+    font-size: 1.2em;
+}
+
+.container:hover .content {
+    transform: rotateY(10deg); /* Rotate on hover for 3D effect */
+}
+@media (max-width: 600px) {
+    header, footer {
+        padding: 20px 10px; }
+         main {
+            padding: 10px; 
+           } 
+       }
